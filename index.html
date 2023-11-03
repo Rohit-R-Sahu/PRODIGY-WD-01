@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/051cb7e597.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Landing Page</title>
+  </head>
+  <!------------------------------ Body Start --------------------------->
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="nav-bar">
+        <h1 class="nav-head">LOGO</h1>
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section section">
+        <div class="hero-items">
+          <h1>Landing Page</h1>
+          <h3>The best landing page using HTML & CSS</h3>
+          <button id="hero-btn" class="hero-btn" onclick="clickBtn()">
+            Get in Touch
+          </button>
+          <div id="social" class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="container section about-section">
+        <h1 class="section-title text-center">About</h1>
+        <div class="card-container">
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h3>HTML</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-regular fa-heart"></i>
+            <h3>CSS</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-regular fa-bell"></i>
+            <h3>JavaScript</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section -->
+      <section id="blog"class="section container">
+        <div class="blog-container">
+          <div class="blog-image">
+            <img src="assets/office-620822_1280.jpg" />
+          </div>
+          <div class="blog-details">
+              <h1 class="section-title blog-title">Blog</h1>
+              <h3>Lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                inventore, accusamus sit voluptates impedit perspiciatis quod
+                deserunt, labore maiores nisi similique. Accusamus, ut,
+                obcaecati ipsa porro quaerat officia a mollitia minima optio
+                ullam vel! Est modi ullam repudiandae itaque ipsa. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. 
+              </p>
+              <button class="hero-btn blog-btn">Show Blog Page</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section container">
+        <h1 class="section-title text-center">Services</h1>
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/webservice.jpg">
+            <h3>Web Development</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti suscipit nemo voluptatem rem nam ducimus reprehenderit quae fugit nesciunt minus.
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/web design.jpg">
+            <h3>Web Design</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti suscipit nemo voluptatem rem nam ducimus reprehenderit quae fugit nesciunt minus.
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/software dev.jpg">
+            <h3>Software Developement</h3>
+            <p class="card-para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              soluta nam amet iure at est nobis pariatur, ea possimus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti suscipit nemo voluptatem rem nam ducimus reprehenderit quae fugit nesciunt minus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+       <p class="text-center">
+          Copyright &#169;2023 | &nbsp;<b>Rohit Roshan Sahu</b> 
+        </p>
+    </footer>
+    <!-- Added function for button click to display social links -->
+    <script>
+      function clickBtn() {
+        let a = document.getElementById("social");
+        if (a.style.visibility === "hidden") {
+          a.style.visibility = "visible";
+        } else {
+          a.style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+  <!------------------------------- Body End ----------------------------->
+</html>
